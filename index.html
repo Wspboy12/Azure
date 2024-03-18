@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure - Official</title>
+    <link rel="shortcut icon" href="./img/Azure_v4.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyFzW3DEtrjNqBauD4zI2axnliT9tD93Yz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/Azure_v4.png" alt="Azure Logo">
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars white-icon"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <!--<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            No
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Test</a>
+                            <a class="dropdown-item" href="#">Test 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">More</a>
+                        </div>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/azurelua" target="_blank">Script</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Image Slider -->
+    <div class="image-slider">
+        <div class="image-slide active">
+            <img src="./img/peakpx.jpg" alt="Slide 1">
+            <div class="slide-content">
+                <div class="slide-text">Azure</div>
+                <button id="scrollDownButton" class="btn btn-secondary scroll-button-down" onclick="scrollToFeatures()">
+                    <i class="fa-solid fa-angles-down"></i>
+                    <span class="button-text">Azure Features</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- <div class="image-slide">
+            <img src="img/2peakpx.jpg" alt="Slide 2">
+            <div class="slide-content">
+                <div class="slide-text">Innovative</div>
+            </div> 
+        </div>-->
+        <!-- <div class="image-slide">
+            <img src="img/peakpx.jpg" alt="Slide 3">
+            <div class="slide-content">
+                 <div class="slide-text">Quality Development</div> 
+            </div>
+        </div>-->
+    </div>
+
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./img/Azure_image1.png" alt="About Image" class="about-image">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="about-heading">About Azure</h2>
+                    <p class="about-content">Description 1</p>
+                    <p class="about-content">Description 2</p>
+                    <a href="./about.html" class="btn btn-dark know-more-btn">More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section py-5">
+        <div class="container">
+            <h2 class="services-heading">Features</h2>
+            <ul class="services-list">
+                <li class="feature-card">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <div class="service-content">
+                        <div class="service-title">Test</div>
+                        <div class="service-divider"></div>
+                        <div class="feature-description">Description 1 Best Ui no jokey :></div>
+                    </div>
+                </li>
+
+                <li class="feature-card">
+                    <div class="service-icon"><i class="fas fa-laptop"></i></div>
+                    <div class="service-title">Test</div>
+                    <hr class="service-divider">
+                    <div class="feature-description">Description 2</div>
+                </li>
+                <li class="feature-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="service-title">Test</div>
+                    <hr class="service-divider">
+                    <div class="feature-description">Description 3</div>
+                </li>
+                <li class="feature-card">
+                    <div class="service-icon"><i class="fas fa-server"></i></div>
+                    <div class="service-title">Test</div>
+                    <hr class="service-divider">
+                    <div class="feature-description">Description 4</div>
+                </li>
+                <li class="feature-card">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <div class="service-title">Test</div>
+                    <hr class="service-divider">
+                    <div class="feature-description">Description 5</div>
+                </li>
+                <li class="feature-card">
+                    <div class="service-icon"><i class="fas fa-cloud"></i></div>
+                    <div class="service-title">Test</div>
+                    <hr class="service-divider">
+                    <div class="feature-description">Description 6</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Developer Section -->
+    <section class="testimonials-section py-5" style="background-color: #111;">
+        <div class="container">
+            <h2 class="section-heading" style="color: #B6B6B6; text-align: center;">Developers</h2>
+            <div class="row" style="margin-top: 35px;">
+                <div class="col-md-4">
+                    <div class="testimonial-card"
+                        style="border-radius: 10px; padding: 15px; text-align: center; background-color: #181818; margin-bottom: 20px;">
+                        <div class="testimonial-icon">
+                            <img src="https://avatar-cyan.vercel.app/api/pfp/791645623128162344/image" alt="Elegant"
+                                class="circle-profile-pic hd-image">
+                        </div>
+                        <p class="testimonial-text" style="color: #fff; margin-top: 15px;">Dont fucking know what he do
+                        </p>
+                        <h5 class="testimonial-author" style="color: #b6b6b6; margin-top: 10px;">Elegant</h5>
+                        <p class="testimonial-role" style="color: #7269a5;">CEO, Co-Founder</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card"
+                        style="border-radius: 10px; padding: 15px; text-align: center; background-color: #181818; margin-bottom: 20px;">
+                        <div class="testimonial-icon">
+                            <img src="https://avatar-cyan.vercel.app/api/pfp/833817570259238953/image" alt="Linemaster"
+                                class="circle-profile-pic hd-image">
+                        </div>
+                        <p class="testimonial-text" style="color: #fff; margin-top: 15px;">I dont know what he do</p>
+                        <h5 class="testimonial-author" style="color: #b6b6b6; margin-top: 10px;">Linemaster</h5>
+                        <p class="testimonial-role" style="color: #7269a5;">LuaU/Lua Developer</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card"
+                        style="border-radius: 10px; padding: 15px; text-align: center; background-color: #181818; margin-bottom: 20px;">
+                        <div class="testimonial-icon">
+                            <img src="https://avatar-cyan.vercel.app/api/pfp/1004786310596272168/image" alt="Gino"
+                                class="circle-profile-pic hd-image">
+                        </div>
+                        <p class="testimonial-text" style="color: #fff; margin-top: 15px;">He's Chill</p>
+                        <h5 class="testimonial-author" style="color: #b6b6b6; margin-top: 10px;">Gino</h5>
+                        <p class="testimonial-role" style="color: #7269a5;">LuaU/Lua Developer</p>
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-bottom: 40px;">
+                    <div class="testimonial-card"
+                        style="border-radius: 10px; padding: 15px; text-align: center; background-color: #181818;">
+                        <div class="testimonial-icon">
+                            <img src="https://avatar-cyan.vercel.app/api/pfp/514241462297427969/image" alt="YungSlime"
+                                class="circle-profile-pic hd-image">
+                        </div>
+                        <p class="testimonial-text" style="color: #fff; margin-top: 15px;">I dont know what he do</p>
+                        <h5 class="testimonial-author" style="color: #b6b6b6; margin-top: 10px;">YungSlime</h5>
+                        <p class="testimonial-role" style="color: #7269a5;">LuaU/Lua Developer</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Support Section (Kinda useless) -->
+    <!--<section class="contact-section py-5" style="background-color: #111;">
+        <div class="container" style=" border-radius: 10px; padding: 15px;">
+            <h2 class="section-heading" style="color: #fff; text-align: center; font-weight: bold;">Support</h2>
+            <div class="row justify-content-center"> 
+                <div class="col-md-6">
+                    <form class="d-flex justify-content-center"> 
+                        <button type="submit" class="btn btn-primary"
+                            style="background-color: #fff; border: none; font-weight: bold;">Discord</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <button id="scrollButton" class="btn btn-primary scroll-button" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+
+    <!-- Footer Section (AKA Credit) -->
+    <footer class="footer-section py-4" style="background-color: #111;">
+        <div class="container text-center">
+            <p class="mb-0" style="color: #fff; font-weight: bold;">&copy; 2024 Azure</p>
+            <p style="color: #7269a5; font-weight: bold;">Designed & Developed by AdvanceFalling Team</p>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var currentIndex = 0;
+            var slides = $('.image-slide');
+
+            function showSlide(index) {
+                slides.removeClass('active');
+                slides.eq(index).addClass('active');
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex);
+            }
+
+            setInterval(nextSlide, 5000); // Auto-slide every 5 seconds
+        });
+
+        $(document).ready(function () {
+            var logoClickCount = 0;
+            var maxClickCount = 20;
+
+            $(".navbar-brand").click(function () {
+                logoClickCount++;
+                if (logoClickCount >= maxClickCount) {
+                    window.location.href = "https://advancefteam.vercel.app/";
+                }
+            });
+        });
+
+        function scrollToTop() {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        }
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#scrollButton').fadeIn();
+                } else {
+                    $('#scrollButton').fadeOut();
+                }
+            });
+        });
+
+        function scrollToFeatures() {
+            var targetOffset = $(".services-section").offset().top;
+            $("html, body").animate({ scrollTop: targetOffset }, "slow");
+        }
+
+    </script>
+</body>
+
+</html>
