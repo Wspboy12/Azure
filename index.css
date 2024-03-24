@@ -39,7 +39,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    border-radius: 20px;
+    border-radius: 8px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, box-shadow 0.3s;
     backdrop-filter: blur(10px);
@@ -183,6 +183,7 @@ body {
     padding: 100px 0;
     background: linear-gradient(180deg, #1a1a1a, #16131a);
     color: #fff;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
 }
 
 .about-heading {
@@ -196,7 +197,7 @@ body {
     font-family: arial;
     font-weight: bold;
     margin-top: 20px;
-    line-height: 1.6;
+    line-height: 1.4;
     font-size: 1.2rem;
     font-weight: normal;
 }
@@ -232,6 +233,8 @@ body {
 }
 
 .know-more-btn {
+    width: 80px;
+    border-radius: 4px;
     margin-top: 30px;
     text-align: center;
 }
@@ -262,14 +265,22 @@ body {
 }
 
 .feature-card {
-    width: 300px;
-    margin: 15px;
+    width: 350px;
+    height: auto;
+    margin: 4px;
     padding: 20px;
     background-color: #181818;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-radius: 2px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     font-weight: normal;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    /* box-shadow: 0 0 10px rgba(40, 40, 40, 0.3); */
+    outline: none;
 }
 
 .service-icon {
@@ -289,12 +300,6 @@ body {
     height: 5px;
     background-color: #1E1E1E;
     margin: 10px 0;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    outline: none;
 }
 
 .feature-description {
@@ -371,4 +376,42 @@ body {
 
 .btn-dark:hover {
     background-color: #343a40;
+}
+
+/* Footer */
+.footer-section {
+    background: rgba(20, 20, 20, 0.3);
+    color: #fff;
+    width: auto;
+    padding: 20px 0;
+}
+
+.footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.divider {
+    border-top: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.footer-info {
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.legal-section a,
+.social-section a {
+    transition: transform 0.3s;
+    color: #fff;
+    text-decoration: none;
+}
+
+.legal-section a:hover,
+.social-section a:hover {
+    transform: translateY(-2px);
+    text-decoration: underline;
 }
