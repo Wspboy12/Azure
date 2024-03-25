@@ -10,65 +10,24 @@
     <style>
         body {
             font-family: FreeMono, monospace;
-            background-color: #000;
+            background-color: #0c0c0c;
             color: #fff;
-        }
-
-        /* Scrollbar */
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #000000;
-            border-radius: 2px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #3f114a;
-            border-radius: 2px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #560c4a;
-        }
-
-        a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        a:hover {
-            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
         }
 
         /* Navbar */
         .navbar {
-            position: fixed;
-            top: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: calc(100% - 20px);
-            max-width: 800px;
-            padding: 1rem 1.5rem;
-            background: rgba(39, 38, 51, 0.3);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 100;
-            border-radius: 20px;
+            background-color: transparent;
             box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s, box-shadow 0.3s;
             backdrop-filter: blur(10px);
+            border-radius: 8px;
+            transition: background-color 0.3s, box-shadow 0.3s;
         }
 
         .navbar-brand {
-            display: inline-block;
             width: 150px;
             height: 50px;
-            margin-left: -60px;
-            margin-right: 150px;
             background-image: url('./img/Azure_v4.png');
             background-size: contain;
             background-repeat: no-repeat;
@@ -76,27 +35,12 @@
             text-indent: -9999px;
         }
 
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 1rem;
-            }
-
-            .navbar-brand {
-                width: 120px;
-                margin-left: -120px;
-            }
-        }
-
-        .navbar-nav .nav-link,
-        .nav-link {
-            font-family: FreeMono, monospace;
-            font-weight: bold;
-            color: #ffffff;
+        .navbar-nav .nav-link {
+            color: #fff;
             transition: color 0.3s;
         }
 
-        .navbar-nav .nav-link:hover,
-        .nav-link:hover {
+        .navbar-nav .nav-link:hover {
             color: #f0f0f0;
         }
 
@@ -112,6 +56,20 @@
             transform: translateY(-2px);
         }
 
+        .custom-toggler .navbar-toggler-icon {
+            margin-bottom: -8px;
+            margin-right: -15px;
+            border-color: #fff;
+        }
+        
+        .custom-toggler .navbar-toggler-icon .white-icon {
+            color: #fff;
+        }
+        
+        .nav-link:hover {
+            color: #fff;
+        }
+
         /* About Section */
         .about-section {
             padding: 100px 0;
@@ -123,8 +81,8 @@
         }
 
         .about-image {
-            max-width: 450px;
-            margin-right: 30px;
+            max-width: 100%;
+            height: auto;
         }
 
         /* Showcase Section */
@@ -149,7 +107,7 @@
 
         /* Footer Section */
         .footer-section {
-            background-color: #000;
+            background-color: transparent;
             color: #fff;
             padding: 30px 0;
         }
@@ -162,14 +120,18 @@
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="./index.html">Azure</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <a class="navbar-brand" href="/">
+                <img src="./img/Azure_v4.png" alt="Azure Logo">
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars white-icon"></i>
+                </span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -232,14 +194,12 @@
                     <h2>Showcase</h2>
                     <div class="contact-info">
                         <p>Description 1</p>
-                        <p>Description 2</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
     <footer class="footer-section">
         <div class="container text-center">
             <p>&copy; 2024 Azure</p>
@@ -247,7 +207,10 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
